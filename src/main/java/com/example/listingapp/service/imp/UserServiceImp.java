@@ -16,6 +16,14 @@ public class UserServiceImp implements UserService {
 
     private final UserRepository userRepository;
 
+
+    @Override
+    public List<String> findAllUsers(Integer price) {
+        System.out.println("UserServiceIml");
+        return userRepository.findAllUsers(price);
+
+    }
+
     @Override
     public List<User> userAll() {
         return userRepository.findAll();

@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import java.util.List;
 
 public interface ListingService {
+
     List<Listing> listingsAll();
 
     List<Listing> allListingByUserByEmail(String email);
